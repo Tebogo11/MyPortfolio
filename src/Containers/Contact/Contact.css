@@ -1,0 +1,48 @@
+.ContactPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.Input {
+  height: 60px;
+  border-radius: 10px;
+  border: 5px solid #393d46;
+  font-size: 20px;
+}
+
+textarea {
+  height: 12em;
+  width: 600px;
+  border-radius: 10px;
+  border: 5px solid #393d46;
+}
+
+div[role="alert"] {
+  color: red;
+  text-align: left;
+  margin-left: 10px;
+}
+
+div[role="alertSuccess"] {
+  color: green;
+  text-align: center;
+
+  margin-left: 10px;
+}
+
+hr {
+  width: 100px;
+  border-top: 1px solid purple;
+}
+
+.ContactButton {
+  border: green;
+}

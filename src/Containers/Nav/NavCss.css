@@ -1,0 +1,33 @@
+.Navigation {
+  background-color: #393d46;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.TabNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.TabText {
+  color: whitesmoke;
+  font-size: large;
+  padding-right: 10px;
+}
+
+.IconStyle {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  padding-right: 30px;
+}

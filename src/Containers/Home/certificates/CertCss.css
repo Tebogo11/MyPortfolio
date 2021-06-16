@@ -1,0 +1,9 @@
+.title {
+  margin-top: 50px;
+}
+
+.ContainerCertificates {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
