@@ -20,7 +20,7 @@ const Navigation = ({ screenSelector }) => {
   return (
     <div className="Navigation">
       <div>
-        <img style={{ width: "120px", margin: "10px" }} alt="logo" src={logo} />
+        <h1>Tebogo Dube</h1>
       </div>
       <div className="TabNav">
         <Button onClick={() => setCurrentPage("Home")}>
