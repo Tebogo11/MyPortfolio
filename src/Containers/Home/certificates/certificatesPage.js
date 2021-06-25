@@ -17,7 +17,7 @@ const certificatesPage = () => {
   ];
   return (
     <div className="Container">
-      <h1 className="title ">Certificates</h1>
+      <h1 className="title tc">Certificates</h1>
       <hr className="hrAbout " />
       <div className="ContainerCertificates">
         {data.map((item) => {
@@ -26,11 +26,11 @@ const certificatesPage = () => {
           return (
             <div>
               <img src={imageUrl.default} alt="Certificate" />
-              <h4>
+              <h5>
                 <a href={item.Link} target="_blank" rel="noopener noreferrer">
                   {item.Title}
                 </a>
-              </h4>
+              </h5>
               <p>{`Created By: ${item.Auther}`}</p>
             </div>
           );

@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding-left: 5px;
   padding-right: 5px;
+  min-width: 700px;
 }
 
 .TabNav {

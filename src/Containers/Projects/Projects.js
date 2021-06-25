@@ -99,7 +99,7 @@ const Projects = () => {
       title: "Place To Stay",
       description:
         "This is a hotal mobile application built for android, that allows users to save and share hotals, motals and airbnbs that other users to know their location.",
-      Software: "HTML/CSS, PHP and MySQL",
+      Software: "Java and Android Studios",
       access: [
         {
           title: "GitHub",

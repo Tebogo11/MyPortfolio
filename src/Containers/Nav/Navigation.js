@@ -1,5 +1,8 @@
 import React from "react";
-import logo from "../../asserts/logo.png";
+//useWindowSize
+import { useWindowSize } from "../../Hook/useWindowSize";
+
+import logo from "../../asserts/Logo.png";
 import "./NavCss.css";
 //UIComponents
 import Button from "@material-ui/core/Button";
@@ -10,10 +13,14 @@ const Navigation = ({ screenSelector }) => {
     screenSelector(screen);
   };
 
+  const breakpoint = 710;
+
+  const size = useWindowSize();
+
   return (
     <div className="Navigation">
       <div>
-        <img style={{ width: "150px" }} alt="logo" src={logo} />
+        <img style={{ width: "120px", margin: "10px" }} alt="logo" src={logo} />
       </div>
       <div className="TabNav">
         <Button onClick={() => setCurrentPage("Home")}>
@@ -26,36 +33,40 @@ const Navigation = ({ screenSelector }) => {
           <p className="TabText">Contact</p>
         </Button>
       </div>
-      <div className="IconStyle">
-        <div className="icon">
-          <a
-            href="https://github.com/Tebogo11"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "github"]}
-              color="white"
-              size="2x"
-              swapOpacity
-            />
-          </a>
+      {size.width < breakpoint ? (
+        ""
+      ) : (
+        <div className="IconStyle">
+          <div className="icon">
+            <a
+              href="https://github.com/Tebogo11"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={["fab", "github"]}
+                color="white"
+                size="2x"
+                swapOpacity
+              />
+            </a>
+          </div>
+          <div className="icon">
+            <a
+              href="https://stackoverflow.com/users/14677783/tebogo11"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={["fab", "stack-overflow"]}
+                color="white"
+                size="2x"
+                swapOpacity
+              />
+            </a>
+          </div>
         </div>
-        <div className="icon">
-          <a
-            href="https://stackoverflow.com/users/14677783/tebogo11"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "stack-overflow"]}
-              color="white"
-              size="2x"
-              swapOpacity
-            />
-          </a>
-        </div>
-      </div>
+      )}
     </div>
   );
 };

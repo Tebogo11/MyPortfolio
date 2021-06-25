@@ -1,7 +1,10 @@
 .ContactPage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  height: 140vh;
 }
 
 .form {
@@ -11,18 +14,38 @@
   margin-top: 50px;
 }
 
-.Input {
-  height: 60px;
-  border-radius: 10px;
-  border: 5px solid #393d46;
-  font-size: 20px;
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .Input {
+    height: 60px;
+    border-radius: 10px;
+    border: 5px solid #393d46;
+    font-size: 20px;
+  }
+
+  textarea {
+    height: 12em;
+    width: 600px;
+    border-radius: 10px;
+    border: 5px solid #393d46;
+  }
 }
 
-textarea {
-  height: 12em;
-  width: 600px;
-  border-radius: 10px;
-  border: 5px solid #393d46;
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .Input {
+    height: 60px;
+    border-radius: 10px;
+    border: 5px solid #393d46;
+    font-size: 20px;
+  }
+
+  textarea {
+    height: 12em;
+    width: 400px;
+    border-radius: 10px;
+    border: 5px solid #393d46;
+  }
 }
 
 div[role="alert"] {
