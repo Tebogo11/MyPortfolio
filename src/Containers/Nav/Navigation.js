@@ -2,7 +2,6 @@ import React from "react";
 //useWindowSize
 import { useWindowSize } from "../../Hook/useWindowSize";
 
-import logo from "../../asserts/Logo.png";
 import "./NavCss.css";
 //UIComponents
 import Button from "@material-ui/core/Button";
