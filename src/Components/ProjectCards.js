@@ -40,7 +40,7 @@ const ProjectCards = (props) => {
               {props.description}
             </p>
           </Typography>
-          <h4 className="tl f6">Software and Tools</h4>
+          <h5 className="tl f6">Software and Tools</h5>
           <p className="tl">{props.Software}</p>
         </CardContent>
       </CardActionArea>
