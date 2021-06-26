@@ -7,17 +7,19 @@
   padding-left: 5px;
   padding-right: 5px;
   min-width: 700px;
+  max-height: 100px;
 }
 
 .TabNav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .TabText {
   color: whitesmoke;
-  font-size: large;
+  font-size: 15px;
   padding-right: 10px;
 }
 
@@ -31,4 +33,10 @@
 
 .icon {
   padding-right: 30px;
+}
+
+.Logo {
+  color: aliceblue;
+  font-size: 20px;
+  margin-left: 5px;
 }

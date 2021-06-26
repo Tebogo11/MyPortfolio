@@ -19,7 +19,7 @@ const Navigation = ({ screenSelector }) => {
   return (
     <div className="Navigation">
       <div>
-        <h1>Tebogo Dube</h1>
+        <h1 className="Logo">Tebogo Dube</h1>
       </div>
       <div className="TabNav">
         <Button onClick={() => setCurrentPage("Home")}>
@@ -45,7 +45,7 @@ const Navigation = ({ screenSelector }) => {
               <FontAwesomeIcon
                 icon={["fab", "github"]}
                 color="white"
-                size="2x"
+                size="1.5x"
                 swapOpacity
               />
             </a>
@@ -59,7 +59,7 @@ const Navigation = ({ screenSelector }) => {
               <FontAwesomeIcon
                 icon={["fab", "stack-overflow"]}
                 color="white"
-                size="2x"
+                size="1.5x"
                 swapOpacity
               />
             </a>
